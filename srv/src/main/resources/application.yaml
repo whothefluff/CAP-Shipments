@@ -1,0 +1,14 @@
+spring:
+  config.activate.on-profile: sqlite
+  datasource:
+    url: "jdbc:sqlite:C:/Users/whothefluff/CAP/test/sqlite.db" 
+    driver-class-name: org.sqlite.JDBC
+    initialization-mode: never
+    hikari:
+      maximum-pool-size: 1
+---
+spring:
+  profiles: default
+cds:
+  datasource:
+    auto-config.enabled: false
